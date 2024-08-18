@@ -1,0 +1,43 @@
+/* Products Page CSS */
+/* In your component's CSS file (e.g., products.page.scss) */
+
+ion-card {
+    margin: 10px; /* Space between cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn’t overflow card boundaries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  .product-image {
+    width: 100%; /* Make image fill the width of the card */
+    height: 300px; /* Fixed height for images */
+    object-fit: contain; /* Ensures full image is visible without distortion */
+    display: block; /* Ensure image displays correctly */
+  }
+  
+  ion-card-header {
+    background-color:plum; /* Light background for the header */
+    padding: 10px; /* Padding inside header */
+    border-bottom: 1px solid #e0e0e0; /* Subtle border below header */
+  }
+  
+  ion-card-title {
+    font-size: 1.2em; /* Slightly larger title font */
+    font-weight: bold; /* Bold title */
+  }
+  
+  ion-card-content {
+    padding: 15px; /* Padding inside content */
+  }
+  
+  ion-item {
+    --padding-start: 0; /* Remove default padding */
+    --inner-padding-end: 0; /* Remove default padding */
+  }
+  
+  ion-label {
+    font-size: 1em; /* Font size for price label */
+    color: #333; /* Dark color for text */
+  }
+
+  

@@ -1,0 +1,25 @@
+ion-card {
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  ion-card img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  ion-card-header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ion-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  ion-button {
+    margin-top: 10px;
+  }
+  

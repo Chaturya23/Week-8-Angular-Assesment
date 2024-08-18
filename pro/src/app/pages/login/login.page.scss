@@ -1,0 +1,79 @@
+/* In your component's CSS file (e.g., login.page.scss) */
+
+ion-content {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #f0f0f5; /* Light background color */
+  }
+  
+  .login-card {
+    width: 100%; /* Make the card width responsive */
+    max-width: 400px; /* Maximum card width */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow effect */
+    margin: 0 20px; /* Horizontal margin for small screens */
+    background-color: white; /* White card background */
+  }
+  
+  ion-card-header {
+    background-color: plum; /* Medium purple background */
+    padding: 15px; /* Padding inside the header */
+    border-top-left-radius: 15px; /* Rounded top-left corner */
+    border-top-right-radius: 15px; /* Rounded top-right corner */
+  }
+  
+  ion-card-title {
+    font-size: 1.7em; /* Larger title font size */
+    font-weight: bold; /* Bold title */
+    text-align: center; /* Center align the title */
+    color: white; /* White title color */
+  }
+  
+  ion-card-content {
+    padding: 25px; /* Padding inside the card content */
+  }
+  
+  ion-item {
+    margin-bottom: 20px; /* Increased space between input items */
+    --highlight-color-focused: #6a0dad; /* Focused input underline color */
+  }
+  
+  ion-input {
+    --padding-start: 0; /* Remove default padding */
+  }
+  
+  ion-button {
+    background-color: plum; /* Medium purple button background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 1.2em; /* Larger font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  ion-button:hover {
+    background-color: #5b0a9d; /* Darker purple on hover */
+  }
+  
+  .error-message {
+    display: block; /* Ensure text block is visible */
+    margin-top: 20px; /* Space above error message */
+    text-align: center; /* Center align error message */
+    font-size: 1.1em; /* Font size for error message */
+    color: #b71c1c; /* Red color for the error message text */
+  }
+  
+  ion-label {
+    color: #333; /* Darker color for labels */
+  }
+  
+  ion-input {
+    --placeholder-color: #999; /* Lighter placeholder color */
+  }
+  
+  ion-item::part(native-input) {
+    font-size: 1.1em; /* Larger input text */
+  }
+  

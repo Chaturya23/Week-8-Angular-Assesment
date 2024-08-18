@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngFor="let product of products">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image"/>
+    <ion-card-header>
+      <ion-card-title>{{ product.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ product.description }}</p>
+      <ion-item>
+        <ion-label>Price: {{ product.price | currency }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

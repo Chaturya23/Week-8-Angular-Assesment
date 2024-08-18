@@ -1,0 +1,62 @@
+<ion-app>
+  <!-- Menu Definition -->
+  <ion-menu side="start" menuId="first" contentId="main-content">
+    <ion-header [translucent]="true">
+      <ion-toolbar style="--background: mediumpurple;">
+        <ion-title>Menu</ion-title>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item button [routerLink]="['/homepage']" class="menu-item">
+        <ion-icon name="compass-outline" slot="start"></ion-icon>
+            <ion-label class="menu-item">Home</ion-label>
+          </ion-item>
+        <ion-item button [routerLink]="['/aboutus']" class="menu-item">
+          <ion-icon name="compass-outline" slot="start"></ion-icon>
+            <ion-label class="menu-item">About Us</ion-label>
+          </ion-item>
+        <ion-item button [routerLink]="['/products']" class="menu-item">
+          <ion-icon name="compass-outline" slot="start"></ion-icon>
+            <ion-label class="menu-item">Products</ion-label>
+          </ion-item> 
+        <ion-item button [routerLink]="['/login']" class="menu-item">
+          <ion-icon name="compass-outline" slot="start"></ion-icon>
+            <ion-label class="menu-item">Login</ion-label>
+          </ion-item>
+        <ion-item button [routerLink]="['/contactus']" class="menu-item">
+          <ion-icon name="compass-outline" slot="start"></ion-icon>
+            <ion-label class="menu-item">Contact Us</ion-label>
+          </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Main Content -->
+  <ion-header [translucent]="true">
+    <ion-toolbar style="--background: plum;">
+      <ion-buttons slot="start">
+        <ion-menu-button menu="first"></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="color: white;">Sparkling Artworks</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content id="main-content" class="ion-padding custom-content">
+    <!-- Background animation container -->
+    <div class="background-animation">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class="hero-section">
+      <h1>Welcome to Our ArtWork</h1>
+      <h5>Explore the menu to navigate through the site.</h5>
+      <!-- <ion-button expand="block" color="secondary">Get Started</ion-button> -->
+    </div>
+  </ion-content>
+</ion-app>
